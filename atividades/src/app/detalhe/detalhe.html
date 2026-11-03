@@ -17,7 +17,7 @@
             <td><b>{{obj.produto.nome}}</b><br>{{obj.produto.descritivo}}</td>
             <td>{{obj.qtd}}</td>
             <td>{{obj.valorTotal| currency:'BRL'}}</td>
-            <td><button class="btn btn-danger">x</button></td>
+            <td><button class="btn btn-danger" type="button" (click)="removerItem(obj)">x</button></td>
         </tr>
     </tbody>
     <tfoot>
